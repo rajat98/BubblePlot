@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    /*background-repeat: repeat;*/
+    /*animation: alternateBackground 10s linear infinite;*/
+}
+
+p {
+    text-align: justify-all;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+
+}
+
+svg {
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    padding: 0px;
+}
+
+
+#overview {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.svg-container {
+    width: 45%;
+    margin: 10px;
+}
+
+p{
+    text-align: justify;
+}
+
+ol {
+    text-align: justify;
+}
+
+/*@keyframes alternateBackground {*/
+
+/*    0%, 100% {*/
+/*        background: url('assets/images/greeen.png');;*/
+/*    }*/
+/*    50% {*/
+/*        background-image: url('assets/images/red.png');*/
+/*    }*/
+/*}*/

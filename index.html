@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <title>Homework #4: Argumentative Vis - CSE 578 - Spring 2024</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+
+    <style>
+    </style>
+</head>
+<body>
+
+
+<div class="myContainer">
+<!--    <h1 class="text-center">Homework #4: Argumentative Vis</h1>-->
+<!--    <h3 class="text-center">Rajat Pawar - rpawar9@asu.edu</h3>-->
+<!--    <hr>-->
+    <div class="container">
+        <!-- Left Writeup -->
+        <div>
+            <h2 align="center">The Relationship Between Cholesterol, Exercise, and Heart Health:
+                <br>Debunking Myths and Uncovering Truths
+            </h2>
+            <br><br>
+            <H3>Introduction</H3>
+            <p> Take a moment to explore the intriguing visualizations below.
+                <br><br>
+                As your eyes move across the graphs, what catches your attention first?</p>
+            <div id="overview">
+                <svg id="yes_plot_svg_overview"></svg>
+                <svg id="no_plot_svg_overview"></svg>
+            </div>
+            <p>At first glance, you might be struck by the stark contrast between the two.</p>
+            <p>The left chart seems to
+                suggest a startling proposition: individuals who engage in higher levels of exercise are more likely to
+                meet an untimely end. This notion challenges our ingrained beliefs about the unequivocal benefits of
+                physical activity for longevity. Could it be that our dedication to fitness carries unforeseen risks,
+                leading us down a path towards mortality?
+            </p>
+            <p>
+                Meanwhile, on the right, a different narrative unfolds. Here, the focus shifts to cholesterol levels—a
+                factor often overlooked in discussions about exercise and health. The chart suggests that it is
+                individuals with elevated cholesterol who are more susceptible to mortality, regardless of their
+                exercise habits. This revelation prompts us to reconsider the simplistic assumption that exercise alone
+                is the key to a longer life.
+            </p>
+            <p>
+                These visualizations, crafted from the same dataset, challenge us to confront a contentious truth: the
+                relationship between exercise, cholesterol, and mortality is far more complex than we once believed. As
+                we delve deeper into this paradox, we are compelled to rethink our preconceived notions about health,
+                longevity, and the choices we make in pursuit of a better life.
+            </p>
+            <p align="justify">This topic delves into various controversial narratives surrounding heart health and its
+                relationship
+                with exercise habits, cholesterol, and other factors.
+
+                By exploring these different attributes and their implications for heart health, this topic can uncover
+                diverse perspectives and generate discussions about the most effective strategies for promoting
+                cardiovascular well-being in individuals and communities.
+            </p>
+        </div>
+
+        <!-- Visualization Section -->
+        <!-- Left Visualization -->
+        <div class="visualization">
+            <!-- Add your left visualization here -->
+            <h3>Cardio kills(Left plot)</h3>
+            <!-- Insert your left visualization here -->
+            <svg id="yes_plot_svg"></svg>
+            <p class="caption" align="center" id="left_plot_caption"></p>
+            <p>This visualization challenges conventional wisdom by depicting the frequency of exercise (number of days
+                per week) against weight, revealing a surprising trend: individuals who exercised more frequently in a
+                particular weight range had a
+                higher incidence of heart attack fatalities. Interestingly, there appears to be minimal correlation
+                between exercise frequency and weight, suggesting that the observed link between exercise and heart
+                attack fatalities may be biased solely by the frequency of exercise.</p>
+        </div>
+
+        <!-- Right Visualization -->
+        <div class="visualization">
+            <!-- Add your right visualization here -->
+            <h3>Cholesterol kills(Right plot)</h3>
+            <!-- Insert your right visualization here -->
+            <svg id="no_plot_svg"></svg>
+            <p class="caption" align="center" id="right_plot_caption"></p>
+            <p>In contrast to the previous visualization, this plot illuminates the interplay between cholesterol levels
+                and weight, with red denoting individuals who died of heart attacks and green depicting survivors.
+                Remarkably, it suggests that those who succumbed to heart attacks often had higher cholesterol levels,
+                challenging the prevailing belief that exercise alone dictates heart health outcomes.
+
+                Additionally, a notable observation is the robust positive correlation between weight and cholesterol
+                levels. This finding implies that weight drive cholesterol levels, thus establishing cholesterol as
+                a significant factor contributing to heart attack fatalities.</p>
+
+        </div>
+
+
+        <div>
+            <h3>Rhetoric/Framing Techniques</h3>
+            <ol>
+                <li><strong>Y-Axis Scale Representation:</strong>
+                    In the left plot, the y-axis scale depicts the average exercise per week,
+                    offering insights into physical activity levels. Conversely, the right plot's y-axis scale
+                    represents
+                    cholesterol levels, providing information on cardiovascular health markers.
+
+                <li><strong>Color Coding:</strong> The choice of colors serves to highlight distinct outcomes in both
+                    plots. Red
+                    signifies
+                    individuals who succumbed to heart attacks, emphasizing adverse health events, while green
+                    represents
+                    those who remain alive, contrasting positive outcomes.
+
+                <li><strong>Bubble Size Significance:</strong> The size of bubbles in both plots corresponds to the
+                    number of individuals
+                    sharing identical data points, such as average exercise/week or cholesterol levels, at specific
+                    weight.
+                    This visual element enhances comprehension by illustrating data density and distribution within the
+                    dataset.
+            </ol>
+            <h5> Left Chart Rhetoric/Framing techniques overview: </h5>
+            <p> The left chart employs framing techniques such as selective highlighting and color symbolism to promote
+                a specific viewpoint. By using red to represent individuals who died of heart attacks, it creates a
+                visually striking contrast that immediately draws attention to the perceived association between
+                frequent exercise and adverse health outcomes. The varying size of bubbles depicts the frequency of
+                individuals of that weight with the same exercise per week, enhancing the visual impact and reinforcing
+                the
+                narrative of exercise frequency's potential role in heart health.</p>
+            <h5> Right Chart Rhetoric/Framing techniques overview: </h5>
+            <p> On the right chart, framing effects are utilized to challenge the prevailing narrative regarding the
+                relationship between exercise and heart health. By highlighting individuals with high cholesterol levels
+                who experienced heart attacks, the visualization aims to shift the focus away from exercise as the sole
+                determinant of cardiovascular risk. The varying size of bubbles depicts the frequency of individuals of
+                that weight with the same cholesterol level, adding depth to the analysis and underscoring the
+                complexity
+                of factors influencing heart health. This framing technique leverages the concept of counterframing
+                discussed in the Hullman paper, offering an alternative perspective that challenges conventional wisdom
+                and encourages critical reflection.</p>
+
+        </div>
+
+        <div>
+            <h3>Dataset</h3>
+
+            <p>
+                Dataset Overview:
+                This dataset provides a comprehensive array of health-related attributes, offering valuable insights
+                into individuals' well-being and potential risk factors for various health conditions.
+                <a href="https://www.kaggle.com/datasets/willianoliveiragibin/cardiokill">(dataset link)</a>
+                <br><br>
+                The attributes included in the dataset are as follows:
+                <br>
+            <ol>
+                <li><strong>User ID (id):</strong> Unique identifiers assigned of individual.
+                <li><strong>Name (name):</strong> Names of the individuals.
+                <li><strong>Age (age):</strong> The age of individuals.
+                <li><strong>Gender (gender):</strong> The gender of individuals.
+                <li><strong> Height (height cm):</strong> The height measured in cms.
+                <li><strong> Weight (weight kg):</strong> The weight expressed in kgs.
+                <li><strong> Blood Pressure (blood pressure):</strong> Blood pressure recorded in millimeters of mercury
+                    (mmHg).
+                <li><strong> Cholesterol (cholesterol mg/dL):</strong> Levels of cholesterol in milligrams per deciliter
+                    (mg/dL) of blood.
+                <li><strong>Glucose (glucose mg/dL):</strong> Glucose levels measured in milligrams per deciliter
+                    (mg/dL).
+                <li><strong>Smoker (smoker):</strong> Binary attribute indicating whether individuals are smokers or
+                    non-smokers.
+            </ol>
+            For our specific analysis and exploration, we have extracted and focused on four key attributes: weight,
+            cholesterol levels, exercise habits (measured in hours per week), and the occurrence of heart attacks.
+            By examining these attributes, we aim to unravel the complex relationships between cholesterol,
+            exercise, and heart health, challenging prevailing assumptions and shedding light on potential
+            misconceptions surrounding cardiovascular health.
+            <br><br>
+            <ol>
+                <li><strong>Cholesterol Levels (Cholesterol mg/dL):</strong> A critical marker often associated with
+                    cardiovascular
+                    risk,
+                    cholesterol levels play a central role in discussions surrounding heart health.
+                </li>
+                <li><strong>Weight:</strong> An essential demographic variable, weight provides into physical well-being
+                    and potential
+                    health risks associated with specific life stages.
+                </li>
+                <li><strong>Exercise Habits (Exercise hours/week):</strong> The frequency of physical activity, measured
+                    in hours per
+                    week,
+                    sheds light on individuals' commitment to fitness and its potential impact on overall health.
+                </li>
+                <li><strong>Heart Attack:</strong> The occurrence of heart attacks serves as a poignant reminder of the
+                    stakes involved
+                    in
+                    managing cardiovascular risk factors and underscores the need for nuanced approaches to heart
+                    health.
+                </li>
+            </ol>
+            </p>
+
+        </div>
+
+        <div>
+            <h3>Conclusion</h3>
+            <p>
+
+                The juxtaposition of the two visualizations challenges our preconceived notions about the relationship
+                between exercise, cholesterol, and mortality. Initially, the left plot seemingly supports the notion
+                that individuals engaging in higher levels of exercise are more prone to untimely deaths. However, upon
+                closer examination of the second plot, a different narrative emerges—one that highlights the
+                significance of cholesterol levels in determining cardiovascular outcomes.</p>
+
+            <p>Contrary to the initial interpretation, the data suggests that individuals who succumbed to heart
+                attacks tended to have higher cholesterol levels, regardless of their exercise habits. This revelation
+                prompts us to reassess the simplistic belief that excessive exercise is inherently detrimental to heart
+                health. Instead, it underscores the multifaceted nature of cardiovascular risk factors and the
+                importance of comprehensive health management strategies.</p>
+
+            <p>By analyzing the same dataset using different pairs of attributes with identical visualization type, we
+                unveil contrasting perspectives that
+                lead to divergent conclusions. While the first plot suggests a causal relationship between exercise
+                frequency and mortality, the second plot reveals the critical role of cholesterol levels in influencing
+                cardiovascular outcomes. This illustrates how visual representations can shape our understanding of
+                complex phenomena and emphasizes the need for critical interpretation in data analysis.</p>
+
+            <p>In essence, these visualizations serve as a compelling example of how nuanced exploration can debunk
+                prevailing myths and challenge conventional wisdom. By leveraging data visualization techniques
+                effectively, we can uncover hidden truths and foster a deeper understanding of complex issues,
+                ultimately leading to more informed decision-making and improved health outcomes.
+            </p>
+
+        </div>
+
+    </div>
+
+
+</div>
+</body>
+</html>
